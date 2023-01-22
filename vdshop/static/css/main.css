@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: #fef3e0;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 170%;
+}
+a {
+    color: #6f6f6f;
+    text-decoration: none;
+    transition: color 500ms ease;
+}
+
+a:hover {
+    color:f1f1f1;
+}
+.container {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+header.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header .logo{
+    color: #222;
+    font-weight:600;
+    font-size: 25px;
+}
+
+header nav a { margin-left: 15px;}
+
+.courses {
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+.courses .course {
+    background: #333;
+    padding:15px;
+    box-sizing: border-box;
+    width: 30%;
+    color: #fff;
+}
+
+.courses .course img {
+    width:100%;
+}
+.courses .course h3 {
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.courses .course a {
+    display: inline-block;
+    padding: 10px 12px;
+    border-radius: 5px;
+    background: #111;
+    color: #fff;
+    transition: transform 500ms ease;
+}
+
+.courses .course a:hover {
+    transform: scale(1.1);    
+}
+
+.presentation {
+    background: #ca5e48;
+    padding: 50px;
+    height: 250px;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+}
+
+.presentation h2 {
+    color: #fff;
+    font-size: 35px;
+    padding-top: 40px;
+}
+
+.presentation p {
+    color: #622424;
+    font-size: 20px;
+    padding-top: 6px;
+    max-width: 600px;
+}
+
+.presentation img {
+    float: right;
+    width: 200px;
+    position: relative;
+    top: 20.5px;
+}
+
+.aside { 
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+.aside h1 {
+    padding-bottom:20px;
+}
+
+.lessons ul {
+    list-style-type:disclosure-closed;
+    font-weight: 600;
+    line-height: 250%;
+    margin-top:20px;
+    list-style-position: inside
+}
+
+.lessons li {
+    transition: transform 500ms ease;
+}
+
+.lessons li:hover{
+    font: red;
+    transform: scale(1.02);
+}
+
+.video {
+    margin-bottom:30px;
+}
+
+
+footer {
+    margin-top: 50px;
+    margin-bottom:25px;
+    text-align: center;
+}
+
+.course-detail { 
+
+}
