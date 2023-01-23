@@ -44,15 +44,19 @@ header nav a { margin-left: 15px;}
 
 .courses {
     display:flex;
+/*    align-items: stretch;*/
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items:flex-start;
 }
 .courses .course {
+    min-width: 300px;
     background: #333;
     padding:15px;
     box-sizing: border-box;
     width: 30%;
     color: #fff;
+    margin-bottom: 50px;
 }
 
 .courses .course img {
@@ -81,7 +85,7 @@ header nav a { margin-left: 15px;}
     padding: 50px;
     height: 250px;
     box-sizing: border-box;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .presentation h2 {
