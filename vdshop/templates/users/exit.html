@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Выход
+{% endblock %}
+
+{% block main %}
+<div class="container user_forms alert alert-success">
+    <h2 class="mb-3">Вы успешно вышли из аккаунта</h2>
+    <p>Хотите вернуться?<a href="{% url 'user' %}"> Войти</a></p>
+</div>
+{% endblock%}

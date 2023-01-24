@@ -10,12 +10,12 @@ def register(request):
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, f'User, {username} successfully created!')
+            messages.success(request, f'Пользователь, {username} создан!')
             return redirect('home')
     else:
         form = UserRegisterForm()
     return render(request, 'users/registration.html',
-                  {'title': 'Registration',
+                  {'title': 'Регистрация',
                    'form': form
                    })
 
@@ -41,7 +41,7 @@ def profile(request):
             updateUserForm.save()
             profileUpdateForm.save()
 
-            messages.success(request, f'Your account updated!')
+            messages.success(request, f'Аккаунт обновлен')
             return redirect('profile')
 
     else:

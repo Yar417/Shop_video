@@ -22,7 +22,7 @@ class Profile(models.Model):
     )
 
     def __str__(self):
-        return f'User profile: {self.user.username}'
+        return f'Профиль пользователя: {self.user.username}'
 
     def save(self, *args, **kwargs):
         super().save()

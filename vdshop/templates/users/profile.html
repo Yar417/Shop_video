@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Личный Кабинет
+{% endblock %}
+
+{% block main %}
+<div class="container user_forms alert alert-success">
+    <h2 class="mb-3">Личный кабинет</h2>
+    <div class="d-flex text-muted pt-3">
+    <img class="user-images bd-placeholder-img flex-shrink-0 me-2" width="64"
+         height="64" src="{{ user.profile.img.url}}">
+        <p class="py-3 mb-0 small lh-sm border-bottom">
+            <strong class="d-block text-gray-dark">@{{ user.username }}</strong>
+            {% if user.email %}
+                <b>E-mail: {{ user.email }}</b>
+            {% endif %}
+        </p>
+    </div>
+    <form method="post" enctype="multipart/form-data" class="form-register mt-4">
+        {% csrf_token %}
+        {{ updateUserForm.as_p }}
+        {{ profileForm.as_p }}
+        {{ profileUpdateForm.as_p}}
+        <button class="btn btn-outline-success" type="submit">Update Profile</button>
+    </form>
+</div>
+{% endblock%}
+
